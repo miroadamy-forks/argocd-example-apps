@@ -12,6 +12,10 @@ spec:
     path: kustomize-guestbook
     repoURL: "https://github.com/miroadamy-forks/argocd-example-apps.git"
     targetRevision: master
+    kustomize:
+      namePrefix: staging-
+      commonLabels: 
+        app: demo3
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
